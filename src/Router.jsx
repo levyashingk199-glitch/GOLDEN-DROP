@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Layout from './components/layout/Layout';
+import AuthGuard from './components/auth/AuthGuard';
 import HomePage from './pages/HomePage';
 import CasesPage from './pages/CasesPage';
 import CaseOpenPage from './pages/CaseOpenPage';
@@ -18,11 +19,39 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: 'cases', element: <CasesPage /> },
-      { path: 'cases/:id', element: <CaseOpenPage /> },
+      {
+        path: 'cases/:id',
+        element: (
+          <AuthGuard>
+            <CaseOpenPage />
+          </AuthGuard>
+        ),
+      },
       { path: 'market', element: <MarketPage /> },
-      { path: 'inventory', element: <InventoryPage /> },
-      { path: 'profile', element: <ProfilePage /> },
-      { path: 'deposit', element: <DepositPage /> },
+      {
+        path: 'inventory',
+        element: (
+          <AuthGuard>
+            <InventoryPage />
+          </AuthGuard>
+        ),
+      },
+      {
+        path: 'profile',
+        element: (
+          <AuthGuard>
+            <ProfilePage />
+          </AuthGuard>
+        ),
+      },
+      {
+        path: 'deposit',
+        element: (
+          <AuthGuard>
+            <DepositPage />
+          </AuthGuard>
+        ),
+      },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

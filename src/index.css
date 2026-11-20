@@ -4,6 +4,22 @@
 }
 
 @theme {
+  --font-heading: 'Barlow Condensed', sans-serif;
+  --font-sans: 'IBM Plex Sans', sans-serif;
+
+  /* SOUL.md Color Roles */
+  --color-page: #13151A;
+  --color-panel: #1B1E25;
+  --color-panel-elevated: #232731;
+  --color-line: #2D323D;
+  --color-text-main: #E8EAEE;
+  --color-text-muted: #8C93A1;
+  --color-accent-amber: #E8A33D;
+  --color-accent-hover: #D49232;
+  --color-status-plus: #3FB67A;
+  --color-status-minus: #E5534B;
+
+  /* CS2 Sacred Rarities */
   --color-rarity-consumer: #B0C3D9;
   --color-rarity-industrial: #5E98D9;
   --color-rarity-milspec: #4B69FF;
@@ -13,48 +29,77 @@
   --color-rarity-gold: #FFD700;
 }
 
-@custom-media --gaming-screen (min-width: 1440px);
-
-/* Custom DaisyUI Theme definition */
+/* DaisyUI Theme — mapped strictly to SOUL.md */
 @layer base {
   [data-theme="csdark"] {
-    --color-primary: #4B69FF;
-    --color-secondary: #8847FF;
-    --color-accent: #FFD700;
-    --color-neutral: #1a1a2e;
-    --color-base-100: #0f0f23;
-    --color-base-200: #16162e;
-    --color-base-300: #212142;
-    --color-base-content: #e2e8f0;
+    --color-primary: #E8A33D;
+    --color-primary-content: #13151A;
+    --color-secondary: #232731;
+    --color-secondary-content: #E8EAEE;
+    --color-accent: #E8A33D;
+    --color-accent-content: #13151A;
+    --color-neutral: #1B1E25;
+    --color-neutral-content: #E8EAEE;
+    --color-base-100: #13151A;
+    --color-base-200: #1B1E25;
+    --color-base-300: #232731;
+    --color-base-content: #E8EAEE;
     --color-info: #5E98D9;
-    --color-success: #36D399;
-    --color-warning: #FBBD23;
-    --color-error: #EB4B4B;
-    --radius-box: 0.75rem;
-    --radius-btn: 0.5rem;
+    --color-success: #3FB67A;
+    --color-warning: #E8A33D;
+    --color-error: #E5534B;
+    --radius-box: 0.5rem;   /* 8px panels/cards */
+    --radius-btn: 0.25rem;  /* 4px buttons/inputs */
+    --radius-badge: 0.25rem;
   }
 }
 
-body {
-  background-color: #0f0f23;
-  color: #e2e8f0;
-  min-height: 100vh;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  overflow-x: hidden;
+/* ── Global base ──────────────────────────────────── */
+html {
+  font-size: 16px;
 }
 
-/* Custom Scrollbar */
+body {
+  background-color: #13151A;
+  color: #E8EAEE;
+  min-height: 100vh;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Tabular nums helper */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Toaster override ─────────────────────────────── */
+/* Applied inline in App.jsx */
+
+/* ── Custom scrollbar ─────────────────────────────── */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #0f0f23;
+  background: #13151A;
 }
 ::-webkit-scrollbar-thumb {
-  background: #252547;
-  border-radius: 4px;
+  background: #2D323D;
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #4B69FF;
+  background: #3E4554;
+}
+
+/* ── Focus outline ───────────────────────────────── */
+:focus-visible {
+  outline: 2px solid #E8A33D;
+  outline-offset: 2px;
 }

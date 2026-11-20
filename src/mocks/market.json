@@ -1,0 +1,202 @@
+[
+  {
+    "id": "listing-001",
+    "seller": { "id": "usr-042", "username": "CS_Trader", "avatar": "/images/avatars/default.png" },
+    "skin": {
+      "id": "ak47-vulcan",
+      "name": "AK-47 | Vulcan",
+      "weapon": "AK-47",
+      "category": "rifle",
+      "image": "/images/skins/ak47-vulcan.png",
+      "rarity": "RESTRICTED",
+      "condition": "MW",
+      "conditionFull": "Minimal Wear",
+      "float": 0.0834,
+      "statTrak": false,
+      "pattern": 245
+    },
+    "price": 1150,
+    "listedAt": "2026-11-14T15:00:00Z",
+    "views": 42
+  },
+  {
+    "id": "listing-002",
+    "seller": { "id": "usr-018", "username": "SkinKing", "avatar": "/images/avatars/default.png" },
+    "skin": {
+      "id": "awp-hyper-beast",
+      "name": "AWP | Hyper Beast",
+      "weapon": "AWP",
+      "category": "rifle",
+      "image": "/images/skins/awp-hyper-beast.png",
+      "rarity": "COVERT",
+      "condition": "FT",
+      "conditionFull": "Field-Tested",
+      "float": 0.2210,
+      "statTrak": true,
+      "pattern": 71
+    },
+    "price": 4600,
+    "listedAt": "2026-11-15T09:00:00Z",
+    "views": 118
+  },
+  {
+    "id": "listing-003",
+    "seller": { "id": "usr-007", "username": "PremiumDrops", "avatar": "/images/avatars/default.png" },
+    "skin": {
+      "id": "desert-eagle-printstream",
+      "name": "Desert Eagle | Printstream",
+      "weapon": "Desert Eagle",
+      "category": "pistol",
+      "image": "/images/skins/deagle-printstream.png",
+      "rarity": "COVERT",
+      "condition": "FN",
+      "conditionFull": "Factory New",
+      "float": 0.0040,
+      "statTrak": false,
+      "pattern": 388
+    },
+    "price": 6900,
+    "listedAt": "2026-11-16T12:30:00Z",
+    "views": 231
+  },
+  {
+    "id": "listing-004",
+    "seller": { "id": "usr-055", "username": "BudgetSkins", "avatar": "/images/avatars/default.png" },
+    "skin": {
+      "id": "famas-meltdown",
+      "name": "FAMAS | Meltdown",
+      "weapon": "FAMAS",
+      "category": "rifle",
+      "image": "/images/skins/famas-meltdown.png",
+      "rarity": "MILSPEC",
+      "condition": "FN",
+      "conditionFull": "Factory New",
+      "float": 0.0320,
+      "statTrak": false,
+      "pattern": 112
+    },
+    "price": 180,
+    "listedAt": "2026-11-13T08:00:00Z",
+    "views": 15
+  },
+  {
+    "id": "listing-005",
+    "seller": { "id": "usr-033", "username": "StatTrakOnly", "avatar": "/images/avatars/default.png" },
+    "skin": {
+      "id": "usp-s-printstream-st",
+      "name": "USP-S | Printstream",
+      "weapon": "USP-S",
+      "category": "pistol",
+      "image": "/images/skins/usp-printstream.png",
+      "rarity": "CLASSIFIED",
+      "condition": "MW",
+      "conditionFull": "Minimal Wear",
+      "float": 0.0820,
+      "statTrak": true,
+      "pattern": 500
+    },
+    "price": 3100,
+    "listedAt": "2026-11-15T22:00:00Z",
+    "views": 88
+  },
+  {
+    "id": "listing-006",
+    "seller": { "id": "usr-012", "username": "GammaOpener", "avatar": "/images/avatars/default.png" },
+    "skin": {
+      "id": "m4a1-s-cyrex",
+      "name": "M4A1-S | Cyrex",
+      "weapon": "M4A1-S",
+      "category": "rifle",
+      "image": "/images/skins/m4a1s-cyrex.png",
+      "rarity": "CLASSIFIED",
+      "condition": "FT",
+      "conditionFull": "Field-Tested",
+      "float": 0.2400,
+      "statTrak": false,
+      "pattern": 0
+    },
+    "price": 650,
+    "listedAt": "2026-11-14T17:00:00Z",
+    "views": 34
+  },
+  {
+    "id": "listing-007",
+    "seller": { "id": "usr-091", "username": "NiceDrops", "avatar": "/images/avatars/default.png" },
+    "skin": {
+      "id": "glock-18-vogue-fn",
+      "name": "Glock-18 | Vogue",
+      "weapon": "Glock-18",
+      "category": "pistol",
+      "image": "/images/skins/glock-vogue.png",
+      "rarity": "RESTRICTED",
+      "condition": "FN",
+      "conditionFull": "Factory New",
+      "float": 0.0150,
+      "statTrak": false,
+      "pattern": 33
+    },
+    "price": 490,
+    "listedAt": "2026-11-16T10:00:00Z",
+    "views": 61
+  },
+  {
+    "id": "listing-008",
+    "seller": { "id": "usr-044", "username": "RifleHunter", "avatar": "/images/avatars/default.png" },
+    "skin": {
+      "id": "ak47-wasteland-rebel",
+      "name": "AK-47 | Wasteland Rebel",
+      "weapon": "AK-47",
+      "category": "rifle",
+      "image": "/images/skins/ak47-wasteland.png",
+      "rarity": "RESTRICTED",
+      "condition": "BS",
+      "conditionFull": "Battle-Scarred",
+      "float": 0.6800,
+      "statTrak": false,
+      "pattern": 7
+    },
+    "price": 310,
+    "listedAt": "2026-11-13T14:00:00Z",
+    "views": 22
+  },
+  {
+    "id": "listing-009",
+    "seller": { "id": "usr-003", "username": "TopTrader", "avatar": "/images/avatars/default.png" },
+    "skin": {
+      "id": "awp-chromatic",
+      "name": "AWP | Chromatic Aberration",
+      "weapon": "AWP",
+      "category": "rifle",
+      "image": "/images/skins/awp-chromatic.png",
+      "rarity": "COVERT",
+      "condition": "MW",
+      "conditionFull": "Minimal Wear",
+      "float": 0.0750,
+      "statTrak": false,
+      "pattern": 199
+    },
+    "price": 5800,
+    "listedAt": "2026-11-17T07:30:00Z",
+    "views": 143
+  },
+  {
+    "id": "listing-010",
+    "seller": { "id": "usr-066", "username": "BudgetHunter", "avatar": "/images/avatars/default.png" },
+    "skin": {
+      "id": "usp-s-flashback",
+      "name": "USP-S | Flashback",
+      "weapon": "USP-S",
+      "category": "pistol",
+      "image": "/images/skins/usp-flashback.png",
+      "rarity": "INDUSTRIAL",
+      "condition": "FT",
+      "conditionFull": "Field-Tested",
+      "float": 0.3100,
+      "statTrak": false,
+      "pattern": 0
+    },
+    "price": 95,
+    "listedAt": "2026-11-12T19:00:00Z",
+    "views": 8
+  }
+]

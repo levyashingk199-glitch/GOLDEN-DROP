@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { useAuthStore } from '../../store/useAuthStore';
 import { useBalanceStore } from '../../store/useBalanceStore';
 import PriceTag from '../ui/PriceTag';
-import { FiBox, FiShoppingBag, FiBriefcase, FiUser, FiPlusCircle } from 'react-icons/fi';
+import { FiBox, FiShoppingBag, FiBriefcase, FiUser, FiPlus, FiLogOut } from 'react-icons/fi';
 
 export default function Header() {
   const { user, isAuthenticated, logout } = useAuthStore();
@@ -12,43 +12,35 @@ export default function Header() {
   const currentBalance = user?.balance ?? balance;
 
   const navLinkClass = ({ isActive }) =>
-    `flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+    `relative py-5 px-3 text-sm font-medium transition-colors ${
       isActive
-        ? 'text-primary bg-primary/10 border-b-2 border-primary font-bold'
-        : 'text-base-content/70 hover:text-base-content hover:bg-base-200'
+        ? 'text-[#E8A33D] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#E8A33D]'
+        : 'text-[#8C93A1] hover:text-[#E8EAEE]'
     }`;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-base-300/80 bg-base-100/90 backdrop-blur-md">
+    <header className="sticky top-0 z-40 w-full border-b border-[#2D323D] bg-[#1B1E25]">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
         {/* Логотип */}
-        <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/30 group-hover:scale-105 transition-transform">
-            <span className="text-xl font-black text-white">CS</span>
+        <Link to="/" className="flex items-center gap-3">
+          <div className="w-8 h-8 rounded-[4px] bg-[#E8A33D] flex items-center justify-center flex-shrink-0">
+            <span className="font-heading text-lg font-bold text-[#13151A] tracking-wider">GD</span>
           </div>
-          <div className="flex flex-col">
-            <span className="font-extrabold text-base tracking-wider leading-none text-white">
-              CS2<span className="text-accent">DROP</span>
-            </span>
-            <span className="text-[10px] text-base-content/50 uppercase tracking-widest font-mono">
-              Cases & Skins
-            </span>
-          </div>
+          <span className="font-heading text-2xl font-bold tracking-wider text-[#E8EAEE] uppercase">
+            GOLDEN<span className="text-[#E8A33D]">-DROP</span>
+          </span>
         </Link>
 
         {/* Навигация десктоп */}
-        <nav className="hidden md:flex items-center gap-1">
+        <nav className="hidden md:flex items-center gap-2">
           <NavLink to="/cases" className={navLinkClass}>
-            <FiBox className="text-base" />
-            <span>Кейсы</span>
+            Кейсы
           </NavLink>
           <NavLink to="/market" className={navLinkClass}>
-            <FiShoppingBag className="text-base" />
-            <span>Маркетплейс</span>
+            Маркет
           </NavLink>
           <NavLink to="/inventory" className={navLinkClass}>
-            <FiBriefcase className="text-base" />
-            <span>Инвентарь</span>
+            Инвентарь
           </NavLink>
         </nav>
 
@@ -57,49 +49,58 @@ export default function Header() {
           {isAuthenticated ? (
             <>
               {/* Плашка баланса */}
-              <Link
-                to="/deposit"
-                className="flex items-center gap-2.5 px-3.5 py-1.5 rounded-xl bg-base-200/90 border border-base-300 hover:border-accent/40 hover:bg-base-300/60 transition-all group"
-              >
+              <div className="flex items-center bg-[#13151A] border border-[#2D323D] rounded-[4px] pl-3 pr-1 py-1 gap-2.5">
                 <div className="flex flex-col items-end">
-                  <span className="text-[10px] text-base-content/50 uppercase font-mono leading-none">
+                  <span className="text-[10px] text-[#8C93A1] uppercase tracking-wider leading-none">
                     Баланс
                   </span>
                   <PriceTag price={currentBalance} size="sm" />
                 </div>
-                <div className="w-6 h-6 rounded-lg bg-accent/10 flex items-center justify-center text-accent group-hover:scale-110 transition-transform">
-                  <FiPlusCircle className="text-sm" />
-                </div>
-              </Link>
+                <Link
+                  to="/deposit"
+                  title="Пополнить баланс"
+                  className="w-8 h-8 rounded-[4px] bg-[#E8A33D] hover:bg-[#D49232] text-[#13151A] flex items-center justify-center transition-colors"
+                >
+                  <FiPlus className="text-base font-bold" />
+                </Link>
+              </div>
 
-              {/* Меню профиля */}
+              {/* Дропдаун профиля */}
               <div className="dropdown dropdown-end">
-                <label tabIndex={0} className="btn btn-ghost btn-circle avatar online">
-                  <div className="w-9 rounded-full ring-2 ring-primary/40">
-                    <img src={user?.avatar} alt={user?.username} />
-                  </div>
+                <label
+                  tabIndex={0}
+                  className="w-10 h-10 rounded-[4px] bg-[#232731] border border-[#2D323D] flex items-center justify-center cursor-pointer overflow-hidden hover:border-[#8C93A1] transition-colors"
+                >
+                  {user?.avatar ? (
+                    <img src={user.avatar} alt={user.username} className="w-full h-full object-cover" />
+                  ) : (
+                    <FiUser className="text-[#8C93A1]" />
+                  )}
                 </label>
                 <ul
                   tabIndex={0}
-                  className="mt-3 z-50 p-2 shadow-2xl menu menu-sm dropdown-content bg-base-200 rounded-2xl w-52 border border-base-300"
+                  className="mt-2 z-50 p-2 shadow-xl menu menu-sm dropdown-content bg-[#232731] border border-[#2D323D] rounded-[8px] w-52"
                 >
-                  <li className="menu-title px-3 py-2">
-                    <span className="text-white font-bold">{user?.username}</span>
+                  <li className="px-3 py-2 border-b border-[#2D323D]">
+                    <span className="text-[#E8EAEE] font-semibold text-sm truncate">{user?.username}</span>
+                    <span className="text-[11px] text-[#8C93A1] truncate">{user?.email}</span>
                   </li>
-                  <li>
-                    <Link to="/profile">
+                  <li className="mt-1">
+                    <Link to="/profile" className="text-[#E8EAEE] hover:bg-[#1B1E25] rounded-[4px] py-2">
                       <FiUser /> Профиль
                     </Link>
                   </li>
                   <li>
-                    <Link to="/inventory">
-                      <FiBriefcase /> Мой Инвентарь
+                    <Link to="/inventory" className="text-[#E8EAEE] hover:bg-[#1B1E25] rounded-[4px] py-2">
+                      <FiBriefcase /> Инвентарь
                     </Link>
                   </li>
-                  <div className="divider my-1"></div>
-                  <li>
-                    <button onClick={logout} className="text-error hover:bg-error/10">
-                      Выйти
+                  <li className="border-t border-[#2D323D] mt-1 pt-1">
+                    <button
+                      onClick={logout}
+                      className="text-[#E5534B] hover:bg-[#E5534B]/10 rounded-[4px] py-2"
+                    >
+                      <FiLogOut /> Выйти
                     </button>
                   </li>
                 </ul>
@@ -107,10 +108,16 @@ export default function Header() {
             </>
           ) : (
             <div className="flex items-center gap-2">
-              <Link to="/login" className="btn btn-ghost btn-sm">
+              <Link
+                to="/login"
+                className="px-3 py-2 text-sm text-[#8C93A1] hover:text-[#E8EAEE] transition-colors"
+              >
                 Войти
               </Link>
-              <Link to="/register" className="btn btn-primary btn-sm">
+              <Link
+                to="/register"
+                className="px-4 py-2 text-sm bg-[#E8A33D] hover:bg-[#D49232] text-[#13151A] font-semibold rounded-[4px] transition-colors"
+              >
                 Регистрация
               </Link>
             </div>

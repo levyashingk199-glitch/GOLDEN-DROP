@@ -4,5 +4,5 @@ export const formatPrice = (amount) => {
 };
 
 export const formatCoin = (amount) => {
-  return `${formatPrice(amount)} 🪙`;
+  return `${formatPrice(amount)} монет`;
 };

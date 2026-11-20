@@ -8,14 +8,19 @@ export default function Badge({ rarity, children, className = '' }) {
   return (
     <span
       className={clsx(
-        'inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wider',
-        r ? `${r.bgClass}/20 ${r.textClass} border ${r.borderClass}/40` : 'bg-base-300 text-base-content',
+        'inline-flex items-center gap-1.5 px-2 py-0.5 rounded-[4px] text-xs font-medium tracking-wide bg-[#1B1E25] border border-[#2D323D]',
         className
       )}
-      style={r ? { textShadow: `0 0 10px ${r.color}55` } : {}}
     >
-      {r && <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: r.color }} />}
-      {children || r?.nameRu || r?.name}
+      {r && (
+        <span
+          className="w-2 h-2 rounded-[2px] flex-shrink-0"
+          style={{ backgroundColor: r.color }}
+        />
+      )}
+      <span style={r ? { color: r.color } : { color: '#E8EAEE' }}>
+        {children || r?.nameRu || r?.name}
+      </span>
     </span>
   );
 }

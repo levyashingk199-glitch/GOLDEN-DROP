@@ -1,0 +1,149 @@
+[
+  {
+    "id": "gamma-case",
+    "name": "Gamma Case",
+    "image": "/images/cases/gamma.png",
+    "price": 499,
+    "category": "standard",
+    "isNew": false,
+    "isHot": true,
+    "contents": [
+      { "skinId": "mac10-lapis-gator", "name": "MAC-10 | Lapis Gator", "weapon": "MAC-10", "rarity": "CONSUMER" },
+      { "skinId": "nova-predator", "name": "Nova | Predator", "weapon": "Nova", "rarity": "CONSUMER" },
+      { "skinId": "usp-s-flashback", "name": "USP-S | Flashback", "weapon": "USP-S", "rarity": "INDUSTRIAL" },
+      { "skinId": "mp9-bulldozer", "name": "MP9 | Bulldozer", "weapon": "MP9", "rarity": "INDUSTRIAL" },
+      { "skinId": "famas-meltdown", "name": "FAMAS | Meltdown", "weapon": "FAMAS", "rarity": "MILSPEC" },
+      { "skinId": "ak47-wasteland-rebel", "name": "AK-47 | Wasteland Rebel", "weapon": "AK-47", "rarity": "RESTRICTED" },
+      { "skinId": "m4a1-s-cyrex", "name": "M4A1-S | Cyrex", "weapon": "M4A1-S", "rarity": "CLASSIFIED" },
+      { "skinId": "awp-hyper-beast", "name": "AWP | Hyper Beast", "weapon": "AWP", "rarity": "COVERT" },
+      { "skinId": "karambit-gamma-doppler", "name": "★ Karambit | Gamma Doppler", "weapon": "Karambit", "rarity": "GOLD" }
+    ]
+  },
+  {
+    "id": "fracture-case",
+    "name": "Fracture Case",
+    "image": "/images/cases/fracture.png",
+    "price": 299,
+    "category": "standard",
+    "isNew": true,
+    "isHot": false,
+    "contents": [
+      { "skinId": "p250-hat-trick", "name": "P250 | Hat Trick", "weapon": "P250", "rarity": "CONSUMER" },
+      { "skinId": "nova-clear-polymer", "name": "Nova | Clear Polymer", "weapon": "Nova", "rarity": "CONSUMER" },
+      { "skinId": "ump45-exposure", "name": "UMP-45 | Exposure", "weapon": "UMP-45", "rarity": "INDUSTRIAL" },
+      { "skinId": "negev-mjolnir", "name": "Negev | Mjölnir", "weapon": "Negev", "rarity": "MILSPEC" },
+      { "skinId": "glock-18-vogue", "name": "Glock-18 | Vogue", "weapon": "Glock-18", "rarity": "RESTRICTED" },
+      { "skinId": "m4a4-tooth-fairy", "name": "M4A4 | Tooth Fairy", "weapon": "M4A4", "rarity": "CLASSIFIED" },
+      { "skinId": "desert-eagle-printstream", "name": "Desert Eagle | Printstream", "weapon": "Desert Eagle", "rarity": "COVERT" },
+      { "skinId": "butterfly-knife-doppler", "name": "★ Butterfly Knife | Doppler", "weapon": "Butterfly Knife", "rarity": "GOLD" }
+    ]
+  },
+  {
+    "id": "revolution-case",
+    "name": "Revolution Case",
+    "image": "/images/cases/revolution.png",
+    "price": 399,
+    "category": "standard",
+    "isNew": true,
+    "isHot": true,
+    "contents": [
+      { "skinId": "p2000-harbor", "name": "P2000 | Harbor", "weapon": "P2000", "rarity": "CONSUMER" },
+      { "skinId": "xm1014-entombed", "name": "XM1014 | Entombed", "weapon": "XM1014", "rarity": "CONSUMER" },
+      { "skinId": "mp5-sd-phosphor", "name": "MP5-SD | Phosphor", "weapon": "MP5-SD", "rarity": "INDUSTRIAL" },
+      { "skinId": "sg553-duality", "name": "SG 553 | Duality", "weapon": "SG 553", "rarity": "MILSPEC" },
+      { "skinId": "ak47-vulcan", "name": "AK-47 | Vulcan", "weapon": "AK-47", "rarity": "RESTRICTED" },
+      { "skinId": "usp-s-printstream", "name": "USP-S | Printstream", "weapon": "USP-S", "rarity": "CLASSIFIED" },
+      { "skinId": "awp-chromatic-aberration", "name": "AWP | Chromatic Aberration", "weapon": "AWP", "rarity": "COVERT" },
+      { "skinId": "m9-bayonet-fade", "name": "★ M9 Bayonet | Fade", "weapon": "M9 Bayonet", "rarity": "GOLD" }
+    ]
+  },
+  {
+    "id": "kilowatt-case",
+    "name": "Kilowatt Case",
+    "image": "/images/cases/kilowatt.png",
+    "price": 449,
+    "category": "standard",
+    "isNew": true,
+    "isHot": true,
+    "contents": [
+      { "skinId": "r8-revolver-crazy-8", "name": "R8 Revolver | Crazy 8", "weapon": "R8 Revolver", "rarity": "CONSUMER" },
+      { "skinId": "nova-toy-soldier", "name": "Nova | Toy Soldier", "weapon": "Nova", "rarity": "CONSUMER" },
+      { "skinId": "five-seven-hybrid", "name": "Five-SeveN | Hybrid", "weapon": "Five-SeveN", "rarity": "INDUSTRIAL" },
+      { "skinId": "famas-invisible-king", "name": "FAMAS | Invisible King", "weapon": "FAMAS", "rarity": "MILSPEC" },
+      { "skinId": "m4a1-s-emphorosaur", "name": "M4A1-S | Emphorosaur-S", "weapon": "M4A1-S", "rarity": "RESTRICTED" },
+      { "skinId": "glock18-rime", "name": "Glock-18 | Rime", "weapon": "Glock-18", "rarity": "CLASSIFIED" },
+      { "skinId": "ak47-inheritance", "name": "AK-47 | Inheritance", "weapon": "AK-47", "rarity": "COVERT" },
+      { "skinId": "talon-knife-vanilla", "name": "★ Talon Knife | Vanilla", "weapon": "Talon Knife", "rarity": "GOLD" }
+    ]
+  },
+  {
+    "id": "dreams-nightmares",
+    "name": "Dreams & Nightmares Case",
+    "image": "/images/cases/dreams.png",
+    "price": 599,
+    "category": "standard",
+    "isNew": false,
+    "isHot": false,
+    "contents": [
+      { "skinId": "g3sg1-dream-glade", "name": "G3SG1 | Dream Glade", "weapon": "G3SG1", "rarity": "CONSUMER" },
+      { "skinId": "m249-deep-relief", "name": "M249 | Deep Relief", "weapon": "M249", "rarity": "INDUSTRIAL" },
+      { "skinId": "usp-s-ticket-to-hell", "name": "USP-S | Ticket to Hell", "weapon": "USP-S", "rarity": "MILSPEC" },
+      { "skinId": "ak47-nightwish", "name": "AK-47 | Nightwish", "weapon": "AK-47", "rarity": "RESTRICTED" },
+      { "skinId": "awp-welcome-to-the-jungle", "name": "AWP | Welcome to the Jungle", "weapon": "AWP", "rarity": "CLASSIFIED" },
+      { "skinId": "m4a4-spider-lily", "name": "M4A4 | Spider Lily", "weapon": "M4A4", "rarity": "COVERT" },
+      { "skinId": "karambit-black-laminate", "name": "★ Karambit | Black Laminate", "weapon": "Karambit", "rarity": "GOLD" }
+    ]
+  },
+  {
+    "id": "recoil-case",
+    "name": "Recoil Case",
+    "image": "/images/cases/recoil.png",
+    "price": 349,
+    "category": "standard",
+    "isNew": false,
+    "isHot": false,
+    "contents": [
+      { "skinId": "nova-clear-polymer-2", "name": "Nova | Clear Polymer", "weapon": "Nova", "rarity": "CONSUMER" },
+      { "skinId": "p250-visions", "name": "P250 | Visions", "weapon": "P250", "rarity": "INDUSTRIAL" },
+      { "skinId": "five-seven-scrawl", "name": "Five-SeveN | Scrawl", "weapon": "Five-SeveN", "rarity": "MILSPEC" },
+      { "skinId": "m4a1-s-noise-suppressor", "name": "M4A1-S | Noise Suppressor", "weapon": "M4A1-S", "rarity": "RESTRICTED" },
+      { "skinId": "glock18-winterized", "name": "Glock-18 | Winterized", "weapon": "Glock-18", "rarity": "CLASSIFIED" },
+      { "skinId": "awp-recoil", "name": "AWP | Recoil", "weapon": "AWP", "rarity": "COVERT" },
+      { "skinId": "stiletto-knife-fade", "name": "★ Stiletto Knife | Fade", "weapon": "Stiletto Knife", "rarity": "GOLD" }
+    ]
+  },
+  {
+    "id": "gold-case",
+    "name": "Gold Case",
+    "image": "/images/cases/gold.png",
+    "price": 1499,
+    "category": "premium",
+    "isNew": false,
+    "isHot": false,
+    "contents": [
+      { "skinId": "awp-dragon-lore", "name": "AWP | Dragon Lore", "weapon": "AWP", "rarity": "COVERT" },
+      { "skinId": "ak47-fire-serpent", "name": "AK-47 | Fire Serpent", "weapon": "AK-47", "rarity": "COVERT" },
+      { "skinId": "m4a4-howl", "name": "M4A4 | Howl", "weapon": "M4A4", "rarity": "COVERT" },
+      { "skinId": "karambit-fade", "name": "★ Karambit | Fade", "weapon": "Karambit", "rarity": "GOLD" },
+      { "skinId": "butterfly-knife-fade", "name": "★ Butterfly Knife | Fade", "weapon": "Butterfly Knife", "rarity": "GOLD" },
+      { "skinId": "sport-gloves-pandoras-box", "name": "★ Sport Gloves | Pandora's Box", "weapon": "Sport Gloves", "rarity": "GOLD" }
+    ]
+  },
+  {
+    "id": "knife-case",
+    "name": "Knife Case",
+    "image": "/images/cases/knife.png",
+    "price": 2499,
+    "category": "special",
+    "isNew": false,
+    "isHot": true,
+    "contents": [
+      { "skinId": "karambit-doppler", "name": "★ Karambit | Doppler", "weapon": "Karambit", "rarity": "GOLD" },
+      { "skinId": "m9-bayonet-marble-fade", "name": "★ M9 Bayonet | Marble Fade", "weapon": "M9 Bayonet", "rarity": "GOLD" },
+      { "skinId": "butterfly-knife-tiger-tooth", "name": "★ Butterfly Knife | Tiger Tooth", "weapon": "Butterfly Knife", "rarity": "GOLD" },
+      { "skinId": "talon-knife-doppler", "name": "★ Talon Knife | Doppler", "weapon": "Talon Knife", "rarity": "GOLD" },
+      { "skinId": "stiletto-knife-marble-fade", "name": "★ Stiletto Knife | Marble Fade", "weapon": "Stiletto Knife", "rarity": "GOLD" },
+      { "skinId": "ursus-knife-fade", "name": "★ Ursus Knife | Fade", "weapon": "Ursus Knife", "rarity": "GOLD" }
+    ]
+  }
+]

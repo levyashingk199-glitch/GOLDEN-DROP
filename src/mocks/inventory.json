@@ -1,0 +1,156 @@
+[
+  {
+    "id": "inv-001",
+    "skin": {
+      "id": "ak47-vulcan",
+      "name": "AK-47 | Vulcan",
+      "weapon": "AK-47",
+      "category": "rifle",
+      "image": "/images/skins/ak47-vulcan.png",
+      "rarity": "RESTRICTED",
+      "collection": "The Operation Vanguard Collection"
+    },
+    "condition": "MW",
+    "conditionFull": "Minimal Wear",
+    "float": 0.0834,
+    "pattern": 245,
+    "statTrak": false,
+    "price": 1200,
+    "obtainedAt": "2026-11-15T10:30:00Z",
+    "source": "Revolution Case",
+    "isListed": false,
+    "listingId": null
+  },
+  {
+    "id": "inv-002",
+    "skin": {
+      "id": "awp-hyper-beast",
+      "name": "AWP | Hyper Beast",
+      "weapon": "AWP",
+      "category": "rifle",
+      "image": "/images/skins/awp-hyper-beast.png",
+      "rarity": "COVERT",
+      "collection": "The Falchion Collection"
+    },
+    "condition": "FT",
+    "conditionFull": "Field-Tested",
+    "float": 0.2210,
+    "pattern": 71,
+    "statTrak": true,
+    "price": 4800,
+    "obtainedAt": "2026-11-14T08:12:00Z",
+    "source": "Gamma Case",
+    "isListed": true,
+    "listingId": "listing-022"
+  },
+  {
+    "id": "inv-003",
+    "skin": {
+      "id": "desert-eagle-printstream",
+      "name": "Desert Eagle | Printstream",
+      "weapon": "Desert Eagle",
+      "category": "pistol",
+      "image": "/images/skins/deagle-printstream.png",
+      "rarity": "COVERT",
+      "collection": "The Fracture Collection"
+    },
+    "condition": "FN",
+    "conditionFull": "Factory New",
+    "float": 0.0040,
+    "pattern": 388,
+    "statTrak": false,
+    "price": 7200,
+    "obtainedAt": "2026-11-13T22:00:00Z",
+    "source": "Fracture Case",
+    "isListed": false,
+    "listingId": null
+  },
+  {
+    "id": "inv-004",
+    "skin": {
+      "id": "m4a1-s-cyrex",
+      "name": "M4A1-S | Cyrex",
+      "weapon": "M4A1-S",
+      "category": "rifle",
+      "image": "/images/skins/m4a1s-cyrex.png",
+      "rarity": "CLASSIFIED",
+      "collection": "The Chroma 2 Collection"
+    },
+    "condition": "MW",
+    "conditionFull": "Minimal Wear",
+    "float": 0.1020,
+    "pattern": 0,
+    "statTrak": false,
+    "price": 890,
+    "obtainedAt": "2026-11-12T14:00:00Z",
+    "source": "Gamma Case",
+    "isListed": false,
+    "listingId": null
+  },
+  {
+    "id": "inv-005",
+    "skin": {
+      "id": "famas-meltdown",
+      "name": "FAMAS | Meltdown",
+      "weapon": "FAMAS",
+      "category": "rifle",
+      "image": "/images/skins/famas-meltdown.png",
+      "rarity": "MILSPEC",
+      "collection": "The Gamma Collection"
+    },
+    "condition": "BS",
+    "conditionFull": "Battle-Scarred",
+    "float": 0.7640,
+    "pattern": 112,
+    "statTrak": false,
+    "price": 85,
+    "obtainedAt": "2026-11-11T09:45:00Z",
+    "source": "Gamma Case",
+    "isListed": false,
+    "listingId": null
+  },
+  {
+    "id": "inv-006",
+    "skin": {
+      "id": "usp-s-printstream",
+      "name": "USP-S | Printstream",
+      "weapon": "USP-S",
+      "category": "pistol",
+      "image": "/images/skins/usp-printstream.png",
+      "rarity": "CLASSIFIED",
+      "collection": "The Revolution Collection"
+    },
+    "condition": "FN",
+    "conditionFull": "Factory New",
+    "float": 0.0210,
+    "pattern": 500,
+    "statTrak": true,
+    "price": 3200,
+    "obtainedAt": "2026-11-10T17:30:00Z",
+    "source": "Revolution Case",
+    "isListed": false,
+    "listingId": null
+  },
+  {
+    "id": "inv-007",
+    "skin": {
+      "id": "glock-18-vogue",
+      "name": "Glock-18 | Vogue",
+      "weapon": "Glock-18",
+      "category": "pistol",
+      "image": "/images/skins/glock-vogue.png",
+      "rarity": "RESTRICTED",
+      "collection": "The Fracture Collection"
+    },
+    "condition": "WW",
+    "conditionFull": "Well-Worn",
+    "float": 0.4100,
+    "pattern": 33,
+    "statTrak": false,
+    "price": 240,
+    "obtainedAt": "2026-11-09T11:00:00Z",
+    "source": "Fracture Case",
+    "isListed": false,
+    "listingId": null
+  }
+]
